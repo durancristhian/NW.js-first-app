@@ -3,6 +3,17 @@
 	"name": "nw-test",
 	"window": {
 		"toolbar": false,
-		"frame": false
-	}
+		"frame": false,
+		"icon": "favicon.png",
+		// "resizable": false,
+		// "show": false,
+		// "show_in_taskbar": false,
+		// "fullscreen": true,
+		"height": 500,
+		"width": 800,
+		"min_height": 400,
+		"min_width": 700,
+		"position": "center"
+	},
+	"version": "0.0.1"
 }
