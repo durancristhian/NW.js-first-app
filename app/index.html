@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>node-webkit-test-app</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>Hello!, this is my first node-webkit app</h1>
+	<header>
+		<ul>
+			<li><a href="#" id="button-minimize">Minimize</a></li>
+			<li><a href="#" id="button-maximize">Maximize</a></li>
+			<li><a href="#" id="button-close">Close</a></li>
+		</ul>		
+	</header>
+
+	<script src="jquery-2.1.3.min.js"></script>
+	<script>
+
+		var nw = require("nw.gui");
+		var win = nw.Window.get();
+		win.isMaximixed = false;
+
+		$(document).on("ready", function () {
+
+			console.log("It works (:");
+
+			$("#button-close").on("click", close);
+			$("#button-maximize").on("click", maximize);
+			$("#button-minimize").on("click", minimize);
+		});
+
+		function close (e) { e.preventDefault(); win.close(); }
+		function maximize (e) { 
+
+			e.preventDefault();
+
+			if (win.isMaximixed) win.unmaximize();
+			else win.maximize();
+
+			win.isMaximixed = !win.isMaximixed;
+		}
+		function minimize (e) { e.preventDefault(); win.minimize(); }
+
+		win.on("maximize", function () { win.isMaximixed = true; });
+		win.on("unmaximize", function () { win.isMaximixed = false; });
+
+	</script>
+</body>
+</html>
