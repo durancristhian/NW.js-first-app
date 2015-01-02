@@ -3,47 +3,50 @@
 <head>
 	<meta charset="UTF-8">
 	<title>node-webkit-test-app</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="css/ionicons.css">
+	<link rel="stylesheet" href="css/lato-regular.css">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<h1>Hello!, this is my first node-webkit app</h1>
+
+	<!-- Fixed header -->
 	<header>
+
+		<!-- Control buttons -->
 		<ul>
-			<li><a href="#" id="button-minimize">Minimize</a></li>
-			<li><a href="#" id="button-maximize">Maximize</a></li>
-			<li><a href="#" id="button-close">Close</a></li>
-		</ul>		
+			<li>
+				<a href="#" id="show-dev-tools">
+					<span class="ion-wrench"></span>
+				</a>
+			</li>
+			<li>
+				<a href="#" id="minimize">
+					<span class="ion-minus-round"></span>
+				</a>
+			</li>
+			<li>
+				<a href="#" id="maximize">
+					<span class="ion-arrow-expand"></span>
+				</a>
+			</li>
+			<li>
+				<a href="#" id="close">
+					<span class="ion-close-round"></span>
+				</a>
+			</li>
+		</ul>
 	</header>
 
-	<script src="jquery-2.1.3.min.js"></script>
-	<script>
+	<!-- Centered hero -->
+	<div class="hero">
+		<h1>Hello!,</h1>
+		<p>
+			this is my first node-webkit app
+			<span class="ion-happy-outline"></span>
+		</p>
+	</div>
 
-		var nw = require("nw.gui");
-		var win = nw.Window.get();
-		win.isMaximixed = false;
-
-		$(document).on("ready", function () {
-
-			$("#button-close").on("click", close);
-			$("#button-maximize").on("click", maximize);
-			$("#button-minimize").on("click", minimize);
-		});
-
-		function close (e) { e.preventDefault(); win.close(); }
-		function maximize (e) { 
-
-			e.preventDefault();
-
-			if (win.isMaximixed) win.unmaximize();
-			else win.maximize();
-
-			win.isMaximixed = !win.isMaximixed;
-		}
-		function minimize (e) { e.preventDefault(); win.minimize(); }
-
-		win.on("maximize", function () { win.isMaximixed = true; });
-		win.on("unmaximize", function () { win.isMaximixed = false; });
-
-	</script>
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/control-buttons.js"></script>
 </body>
 </html>
