@@ -1,6 +1,6 @@
 {
 	"main": "index.html",
-	"name": "nw-test",
+	"name": "NW.js-test-app",
 	"window": {
 		"toolbar": false,
 		"frame": false,
@@ -11,5 +11,5 @@
 		"min_width": 700,
 		"position": "center"
 	},
-	"version": "0.0.2"
+	"version": "1.0.0."
 }

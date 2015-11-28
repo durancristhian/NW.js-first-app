@@ -7,7 +7,6 @@ body {
 	margin: 0;
 	padding-top: 50px;
 }
-/* Header */
 header {
 	background: #e6e9ee;
 	left: 0;
@@ -42,8 +41,6 @@ header #show-dev-tools {
 	color: #db4453;
 	margin-right: 50px;
 }
-
-/* Hero */
 .hero {
 	font-size: 2em;
 	margin: 0 auto;

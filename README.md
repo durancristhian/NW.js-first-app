@@ -1,13 +1,24 @@
-node-webkit-test-app
-----------
+# NW.js-test-app
 
-> My first node-webkit app. Just for test (I was bored and anxious of learning something new)
+***(FINISHED)*** :computer: My first NW.js app. Just for test (I was bored and anxious of learning something new)
 
-Screenshot
-----------
-![node-webkit-test-app](https://raw.githubusercontent.com/durancristhian/node-webkit-test-app/master/screenshots/app.png)
+## Development
 
-License
-----------
-Licensed under the MIT license.
-Copyright (c) 2014 [@durancristhian](https://twitter.com/DuranCristhian)
+```
+npm install
+npm start
+```
+
+## Screenshots
+
+> Because we all love the screenshots
+
+![NW.js-test-app](https://raw.githubusercontent.com/durancristhian/node-webkit-test-app/master/screenshots/NW.js-test-app.png)
+
+## Contributing
+
+No restriction at all. Feel free to contribute with whatever you want.
+
+## License
+
+MIT

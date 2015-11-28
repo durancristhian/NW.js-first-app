@@ -1,0 +1,18 @@
+{
+  "name": "NW.js-test-app",
+  "version": "1.0.0",
+  "description": "My first NW.js app. Just for test (I was bored and anxious of learning something new)",
+  "main": "server.js",
+  "scripts": {
+    "start": "nw ./app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/durancristhian/node-webkit-test-app.git"
+  },
+  "author": "Cristhian Javier Duran <durancristhian@gmail.com> (https://github.com/durancristhian)",
+  "license": "MIT",
+  "devDependencies": {
+    "nw": "0.12.3"
+  }
+}

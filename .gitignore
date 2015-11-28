@@ -1,1 +1,4 @@
-/.project
+# Dependencies directory
+node_modules
+# Logs
+*.log
