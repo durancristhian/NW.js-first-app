@@ -1,6 +1,6 @@
 {
   "name": "NW.js-first-app",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "(FINISHED) My first NW.js app. Just for test (I was bored and anxious of learning something new)",
   "scripts": {
     "add": "git add .",
