@@ -1,4 +1,4 @@
-# NW.js-test-app
+# NW.js-first-app
 
 ***(FINISHED)*** :computer: My first NW.js app. Just for test (I was bored and anxious of learning something new)
 
@@ -9,11 +9,17 @@ npm install
 npm start
 ```
 
+## Uploading changes
+
+```
+npm run upload
+```
+
 ## Screenshots
 
 > Because we all love the screenshots
 
-![NW.js-test-app](https://raw.githubusercontent.com/durancristhian/node-webkit-test-app/master/screenshots/NW.js-test-app.png)
+![NW.js-first-app](https://raw.githubusercontent.com/durancristhian/NW.js-first-app/master/screenshots/NW.js-first-app.png)
 
 ## Contributing
 

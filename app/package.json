@@ -1,15 +1,15 @@
 {
 	"main": "index.html",
-	"name": "NW.js-test-app",
+	"name": "NW.js-first-app",
 	"window": {
 		"toolbar": false,
 		"frame": false,
-		"icon": "images/favicon.png",
+		"icon": "img/favicon.png",
 		"height": 500,
 		"width": 800,
 		"min_height": 400,
 		"min_width": 700,
 		"position": "center"
 	},
-	"version": "1.0.0."
+	"version": "1.0.0"
 }

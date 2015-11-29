@@ -1,18 +1,30 @@
 {
-  "name": "NW.js-test-app",
-  "version": "1.0.0",
-  "description": "My first NW.js app. Just for test (I was bored and anxious of learning something new)",
-  "main": "server.js",
+  "name": "NW.js-first-app",
+  "version": "2.0.0",
+  "description": "(FINISHED) My first NW.js app. Just for test (I was bored and anxious of learning something new)",
   "scripts": {
-    "start": "nw ./app"
+    "add": "git add .",
+    "bump": "bump package.json -M -y",
+    "commit": "git-cz",
+    "push": "git push origin master",
+    "start": "nw ./app",
+    "upload": "npm run bump && npm run add && npm run commit && npm run push"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/durancristhian/node-webkit-test-app.git"
+    "url": "https://github.com/durancristhian/NW.js-first-app.git"
   },
   "author": "Cristhian Javier Duran <durancristhian@gmail.com> (https://github.com/durancristhian)",
   "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
   "devDependencies": {
+    "bump-cli": "1.1.3",
+    "commitizen": "2.4.6",
+    "cz-conventional-changelog": "1.1.4",
     "nw": "0.12.3"
   }
 }
