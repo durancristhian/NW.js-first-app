@@ -1,6 +1,6 @@
 # NW.js-first-app
 
-***(FINISHED)*** :computer: My first NW.js app. Just for test (I was bored and anxious of learning something new)
+:computer: My first NW.js app. Just for test (I was bored and anxious of learning something new)
 
 ## Development
 
