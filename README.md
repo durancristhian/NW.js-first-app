@@ -1,5 +1,7 @@
 # NW.js-first-app
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/durancristhian/NW.js-first-app.svg)](https://greenkeeper.io/)
+
 :computer: My first NW.js app. Just for test (I was bored and anxious of learning something new)
 
 ## Development
